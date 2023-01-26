@@ -2,14 +2,14 @@
 
 const container = document.querySelector('#container');
 
-const content = document.createElement('p');
+const addRedText = document.createElement('p');
 
-content.style.color = 'red';
+addRedText.style.color = 'red';
 
-content.classList.add('content');
-content.textContent = "Hey I'm red!";
+addRedText.classList.add('content');
+addRedText.textContent = "Hey I'm red!";
 
-container.appendChild(content);
+container.appendChild(addRedText);
 
 // Add blue text
 
@@ -22,4 +22,21 @@ moreContent.textContent = 'Im a blue h3!';
 
 container.appendChild(moreContent)
 
+const addDiv = document.createElement('div');
 
+addDiv.style.border = '1px solid black';
+addDiv.style.backgroundColor = 'pink';
+addDiv.style.width = '200px';
+addDiv.style.height = '200px';
+
+const divContent = document.createElement('h1');
+divContent.textContent = 'Im in a div';
+
+addDiv.appendChild(divContent);
+
+const moreDivContent = document.createElement('p');
+moreDivContent.textContent = 'ME TOO!'
+
+addDiv.appendChild(moreDivContent);
+
+container.appendChild(addDiv);
